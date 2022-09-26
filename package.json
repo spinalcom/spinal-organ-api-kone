@@ -1,0 +1,39 @@
+{
+  "name": "spinal-organ-api-kone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "run": "tsc && node index.js",
+    "build": "rm -rf dist && tsc",
+    "dev": "rm -rf dist && tsc --watch & nodemon dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "json5": "^2.1.0",
+    "spinal-core-connectorjs_type": "git+https://github.com/spinalcom/spinal-core-connectorjs_type.git",
+    "spinal-lib-forgefile": "git+https://github.com/spinalcom/spinal-lib-forgefile.git",
+    "spinal-model-bmsnetwork": "git+https://github.com/spinalcom/spinal-model-bmsnetwork.git"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-typescript": "^7.1.0",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.12",
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.19",
+    "nyc": "^15.1.0",
+    "timekeeper": "^2.1.2",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "typescript": "^3.2.2",
+    "typescript-eslint-parser": "^21.0.2"
+  }
+}
